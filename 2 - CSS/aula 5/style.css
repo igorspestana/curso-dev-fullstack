@@ -1,0 +1,23 @@
+body {
+    background-image: url(background.jpg);
+    /* background-position: 100% 10%;  */
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p {
+    color: rgb(15, 29, 121);
+}
+
+.foto-perfil {
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid rgb(0, 0, 0); /* shorthand */
+    margin: 30px 30px 30px 30px; /* shorthand */
+   /*  margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px; */
+}
