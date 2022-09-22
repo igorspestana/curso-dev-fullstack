@@ -1,0 +1,82 @@
+/* ----------------------------------------------------------- */
+/* regra reset. aplica em todas tags possíveis */
+/* ----------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;  /* faz o body estender verticalmente */
+}
+
+body {
+    /* https://cssgradient.io/ */
+    background: rgb(132,0,255);
+    background: linear-gradient(180deg, rgba(132,0,255,1) 0%, rgba(2,0,36,1) 100%);
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.profile {
+    margin-top: 20px;
+    text-align: center;  
+}
+
+.avatar {
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 20px white;
+}
+
+h1 {
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 100;
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+h2 {
+    font-size: 16px;
+    margin-top: 2px;
+}
+
+h3 {
+   font-size: 16px;
+   color: black;
+}
+
+.social {
+     display: flex;
+     justify-content: space-around;
+     list-style: none;
+     margin: 20px 0;
+}
+
+.social img {
+    width: 33px;
+}
+
+.links-list li {
+    list-style: none;
+}
+
+.links-list li a {
+    background-color: white;
+    margin: 10px 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    font-weight: bold;
+} 
+
+.links-list li a span {
+    font-size: 13px;
+    color: grey;
+    display: block;
+    margin: 5px 0;
+}
