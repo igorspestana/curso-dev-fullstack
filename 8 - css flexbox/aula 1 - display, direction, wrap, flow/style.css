@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* flex-flow: row wrap; */ 
+
+    background-color: grey;
+}
+
+.caixa {
+    width: 300px;
+    height: 50px;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+/* 
+
+    flex - ajusta a dimensão dos elementos para não passar além da tela. o flex faz os elementos se acomodarem no espaço que tem disponível independente do tamanho configurado.
+
+    o display: flex com flex-direction: column apesar de parecer com o resultado do display: block tem mais possibilidades de coniguração.
+
+    flex-wrap: wrap - funciona como uma quebra-linha de texto. ao ajustar a dimensão da tela os elementos são passados para a linha de baixo e as sus dimensões não são alteradas. é um princípio de design responsivo. a função padrão é a flex-wrap: nowrap;
+
+    flex-flow: row wrap - é o shorcode do flex.
+
+*/

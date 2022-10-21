@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <form action="salvar.html" method="get">
+        
+        <label for="nome">Nome:</label>
+        <input id="nome" name="nome" type="text" placeholder="Digite o seu nome">
+        
+        <br><br>
+        
+        <label for="email">E-mail:</label>
+        <input id="email" name="email" type="email" placeholder="Digita o seu e-mail">
+
+        <br><br>
+        
+        <label for="senha">Senha:</label>
+        <input id="senha" name="senha" type="password" placeholder="Digita a sua senha">
+        
+        <br><br>
+        
+        <label for="cor">Seleciona a cor do seu nome:</label>
+        <input id="cor" name="cor" type="color">
+        
+        <br><br>
+        
+        <label>Arquivo:</label>
+        <input name="arquivo" type="file">
+        
+        <br><br>
+        
+        <label>Sexo:</label>
+        <br>
+        <input name="sexo" type="radio" value="masculino" id="masculino"> <label for="masculino">Masculino</label>
+        <br>
+        <input name="sexo" type="radio" value="feminino" id="feminino"> <label for="feminino">Feminino</label>
+        <br>
+        <input name="sexo" type="radio" value="nao definido" id="nao definido"> <label for="nao definido">Prefiro não informar</label>
+    
+        <br><br>
+        
+        <label>Habilidades:</label>
+        <br>
+        <input type="checkbox" name="habilidades" value="html" id="html"> <label for="html">HTML</label>
+        <br>
+        <input type="checkbox" name="habilidades" value="css" id="css"> <label for="css">CSS</label>
+        <br>
+        <input type="checkbox" name="habilidades" value="javascript" id="javascript"> <label for="javascript">Javascript</label>
+        
+        <br><br>
+
+        <label>Cidade:</label>
+        <br>
+        <select name="cidade" id="">
+            <option value="" selected>-- Selecione --</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="Minas Gerais">Minas Gerais</option>
+        </select>
+
+        <br><br>
+
+        <label>Carro:</label>
+        <br>
+        <select name="carro" id="">
+            <option value="" selected>-- Selecione --</option>
+            <optgroup label="Honda">
+                <option value="Civic">Civic</option>
+            </optgroup>
+            <optgroup label="GM">
+                <option value="Honda">Honda</option>
+            </optgroup>
+            <optgroup label="Fiat">
+                <option value="Uno">Uno</option>
+            </optgroup>
+
+        </select>
+
+        <br><br>
+
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
+
+
+
+<!-- 
+    
+    select cria uma caixa de seleção.
+    
+    sobre a tabela de cidades: pode pegar uma lista pronta na internet mas o mais correto é que essa lista esteja ligada com o banco de dados que tem uma tabela com todas as cidades, o assim o preenchimento das cidades é feito de forma automatizada.
+
+    o campo select não tem um placeholder e aparece sempre com o primeiro option da lista já selecionado. usando o selected eu mudo o option que eu quero que apareça primeiro.
+        
+    <optgroup> organiza o select por categoria
+
+    -->

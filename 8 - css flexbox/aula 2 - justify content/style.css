@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    background-color: grey;
+}
+
+.caixa {
+    width: 50px;
+    height: 50px;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+/* 
+ 
+    justify-content - justifica os elementos no eixo horizontal. flex-start é o padrão. flexflex-end coloca os elementos a direita. center centriliza os elementos. space-betwween adiciona um espaço entre os elementos para ocupar o container inteiro. space-around adiciona um espaço ao redor dos elementos.
+
+
+*/

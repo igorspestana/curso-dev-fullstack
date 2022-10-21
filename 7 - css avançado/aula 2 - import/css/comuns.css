@@ -1,0 +1,14 @@
+h1, h2, h3 {
+    color: var(--color-primary);
+}
+
+p {
+    color: var(--color-secondary);
+    margin: var(--spacing);
+}
+ 
+button {
+    background: var(--color-primary);
+    color: white;
+}  
+    

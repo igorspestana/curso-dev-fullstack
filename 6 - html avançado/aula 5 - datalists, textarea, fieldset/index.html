@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <form action="salvar.html" method="get">
+        
+        <fieldset>
+            <legend>Dados do Usuário</legend>
+
+            <label for="nome">Nome:</label>
+            <input id="nome" name="nome" type="text" placeholder="Digite o seu nome">
+            
+            <br><br>
+            
+            <label for="email">E-mail:</label>
+            <input id="email" name="email" type="email" placeholder="Digita o seu e-mail">
+
+            <br><br>
+            
+            <label for="senha">Senha:</label>
+            <input id="senha" name="senha" type="password" placeholder="Digita a sua senha">
+            
+            <br><br>
+
+            
+            <label for="cor">Seleciona a cor do seu preferida:</label>
+            <input id="cor" name="cor" type="color">
+            
+            <br><br>
+            
+            <label>Arquivo:</label>
+            <input name="arquivo" type="file">
+            
+            <br><br>
+            
+            <label>Sexo:</label>
+            <br>
+            <input name="sexo" type="radio" value="masculino" id="masculino"> <label for="masculino">Masculino</label>
+            <br>
+            <input name="sexo" type="radio" value="feminino" id="feminino"> <label for="feminino">Feminino</label>
+            <br>
+            <input name="sexo" type="radio" value="nao definido" id="nao definido"> <label for="nao definido">Prefiro não informar</label>
+            
+            <br><br>
+            
+            <label>Habilidades:</label>
+            <br>
+            <input type="checkbox" name="habilidades" value="html" id="html"> <label for="html">HTML</label>
+            <br>
+            <input type="checkbox" name="habilidades" value="css" id="css"> <label for="css">CSS</label>
+            <br>
+            <input type="checkbox" name="habilidades" value="javascript" id="javascript"> <label for="javascript">Javascript</label>
+            
+            <br><br>
+            
+            <label>Cidade:</label>
+            <br>
+            <select name="cidade" id="">
+                <option value="" selected>-- Selecione --</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Minas Gerais">Minas Gerais</option>
+            </select>
+            
+            <br><br>
+            
+            <label>Carro:</label>
+            <br>
+            <select name="carro" id="">
+                <option value="" selected>-- Selecione --</option>
+                <optgroup label="Honda">
+                    <option value="Civic">Civic</option>
+                </optgroup>
+                <optgroup label="GM">
+                    <option value="Honda">Honda</option>
+                </optgroup>
+                <optgroup label="Fiat">
+                    <option value="Uno">Uno</option>
+                </optgroup>
+            </select>
+
+            <br><br>
+            
+            <label for="fruta">Digite a sua fruta preferida</label>
+            <input list="listaFrutas" id="fruta" type="text" name="fruta" placeholder="Digite a fruta">
+            
+            <datalist id="listaFrutas">
+                <option value="Abacate">
+                    <option value="Abacaxi">
+                        <option value="Açai">
+                            <option value="Acerola">
+                            </datalist>
+
+                            <br><br>
+                            
+                            <textarea name="mensagem" cols="30" rows="10"></textarea>
+                            
+                            <br><br>
+                            
+                            <button>Enviar</button>
+                            
+        </fieldset>
+    </form>
+</body>
+</html>
+
+
+
+<!-- 
+    datalist é semelhante ao select mas o option nesse caso não tem uma tag de fechamento.
+
+    é necessário usar o parâmetro list="" no input com valor associado ao valor do id="" no datalist para que seja reconhecida as opções do datalist e aconteça o autocompletar quando o usuário digitar.
+
+    é possível utilizar essa interação de escrever a filtrar as opções do datalist no select. como?
+
+    textarea cria uma caixa para entrada de mensagem definindo a quantidade de linhas e colunas.
+
+    fieldset cria uma área com borda para separar os campos do formulário por exemplo dados pessoais, dados de pagamento, dados de endereço. com legend é possível criar um título para o campo.
+    
+-->

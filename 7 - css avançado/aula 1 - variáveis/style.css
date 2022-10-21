@@ -1,0 +1,25 @@
+:root {
+    --color-primary: rgb(155, 53, 123);
+    --color-secondary: rgb(255, 0, 174);
+
+    --spacing: 32px;
+}
+
+h1, h2, h3 {
+    color: var(--color-primary);
+}
+
+p {
+    color: var(--color-secondary);
+    margin: var(--spacing);
+}
+ 
+button {
+    background: var(--color-primary);
+    color: white;
+}  
+    
+    
+/* 
+    :root é usado para criar definicoes de variáveis. geralmente é construído a partir de um style guide. torna o código mais escalável. boa prática é colocar no topo do css e nomear a variável em inglês. 
+*/

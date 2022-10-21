@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form action="salvar.html" method="post">
+        <label>Nome:</label>
+        <input name="nome" type="text" placeholder="Digite o seu nome">
+        
+        <label>E-mail:</label>
+        <input name="email" type="email" placeholder="Digita o seu e-mail">
+        
+        <label>Senha:</label>
+        <input name="senha" type="password" placeholder="Digita a sua senha">
+        
+        <label>Seleciona a cor do seu nome:</label>
+        <input name="cor" type="color">
+        
+        <label>Arquivo:</label>
+        <input name="arquivo" type="file">
+
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
+
+
+
+<!-- 
+    
+    <label> tag que se insere antes do campo input. indica para o usuário o que é aquele campo assim como o placeholder mas que fica fora. é uma tag semântica e não tem comportamento e nem estilo.
+
+    method="" é um parâmetro de comunicação com o back-end. usado com método http get envia todos os dados na url. é um método inseguro para dados sensíveis. o método do tipo post é mais seguro porque envia os dados recolhidos por de baixo dos panos. o método post depende do back-end para receber, processar e devolver um resultado.
+
+    name="" indica o nome do campo input. se comunica com o method. usando o método get por exemplo gera uma url http://127.0.0.1:5500/salvar.html?nome=igor&email=igorspestana%40gmail.com&senha=1234
+ 
+    -->
