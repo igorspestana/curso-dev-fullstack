@@ -1,0 +1,21 @@
+ul {
+    background: grey;
+    padding: 20px;
+}
+
+ul li {
+    background: blue;
+    display: inline;
+    margin: 10px;
+    
+}
+
+
+
+/* a {
+    width: 150px;
+    height: 150px;
+    display: block; para a alteração de dimensão funcionar é necessária alterar o display para block. 
+    display: inline-block;  se comporta como linha e bloco.
+    }
+*/

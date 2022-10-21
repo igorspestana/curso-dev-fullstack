@@ -1,0 +1,48 @@
+p::first-line {
+    color: orange;
+}
+
+p::first-letter {
+    color: red;
+    font-size: 40px;
+}
+
+h1::before {
+    content: url(https://cdn-icons-png.flaticon.com/512/231/231138.png); /* não é possível alterar as dimensões */
+   
+}
+
+h2::before {
+    background: url(https://cdn-icons-png.flaticon.com/512/770/770706.png);
+    background-size: cover;
+    width: 150px;
+    height:150px;
+    display: inline-block; /* before não é um elemento caixa. precisa ser colocado como elemento caixa. nesse caso usamos o inline-block para manter o comportamento de inline também e o texto ficar ao lado*/
+    content: ""; /* é obrigatório insierir o content */
+    margin-right: 20px;
+}
+
+h2::after {
+    background: url(https://cdn-icons-png.flaticon.com/512/770/770706.png);
+    background-size: cover;
+    width: 150px;
+    height:150px;
+    display: inline-block; /* before não é um elemento caixa. precisa ser colocado como elemento caixa. nesse caso usamos o inline-block para manter o comportamento de inline também e o texto ficar ao lado*/
+    content: ""; /* é obrigatório insierir o content */
+    margin-left: 50px;
+}
+
+::selection {
+    color: pink;
+    background: black;
+}
+
+/* 
+    a estrutura do pseudo-elementos é com :: 
+    auxilia a alterar uma parte específica de um elemento.
+    exemplo: alterar uma linha de um parágrafo
+    ::first-line - altera a primeira linha
+    ::before - adiciona um elemento antes. tem que estar dentro de content
+    ::after- adiciona um elemento depois. tem que estar dentro de content
+    ::selection - muda a cor do texto quando seleciona ele com o mouse. não aplica numa tag específica. aplica no documento inteiro.
+*/

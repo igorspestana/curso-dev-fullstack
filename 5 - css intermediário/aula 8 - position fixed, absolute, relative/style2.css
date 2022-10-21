@@ -1,0 +1,21 @@
+.conteudo {
+    position: relative; /* faz com que todos os elementos que sejam absolutos e estejam dentro dele sejam posicionados relativamente a ele */
+    border: 1px solid black;
+    padding: 20px;
+    height: 500px;
+}
+
+.quadrado {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: black;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+    font-size: 12px;
+}
+
+/* 
+    a posição dos elementos com position absolute é sempre relativa ao elemento pai que estiver com position relative. no caso se não for determinado um position relative para o pai direto o elemento fica relativo ao body. para alterar essa relação é necessário indicar position relative ao pai do elemento. nesse exemplo é uma div. 
+*/

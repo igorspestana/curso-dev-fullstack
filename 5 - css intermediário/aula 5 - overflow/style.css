@@ -1,0 +1,15 @@
+div {
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    overflow: auto;
+}
+
+
+/* 
+overflow: hidden; esconde elementos que passam da div
+overflow: scroll; adiciona uma barra de rolagem na div
+overflow-x: hidden; esconde a barra de rolagem no eixo x
+overflow-y: hidden; esconde a barra de rolagem no eixo y
+overflow: auto; entnede se precisar ou não da barra de rolagem
+*/

@@ -1,0 +1,49 @@
+.exemplo {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+div p {
+    color: rgb(50, 168, 149);
+}
+
+/* dessa forma o link não muda de cor. apenas o parágrafo. */
+p.red {
+    color: red;
+}
+
+.margin {
+    margin: 50px;
+}
+
+/* combinator de elementos */
+h1, h2, h3 {
+    color: blue;
+}
+
+/* combinator de classes */
+.classe1 .classe2 .classe3 {
+    color: yellow;
+}
+
+/* todos o p dentro da div ficarão verdes. incluindo o p dentro da section 
+.exemplo2 p {
+    color: green;
+} */
+
+
+/* aplica apenas nos filhos diretos da div. não aplica no p da section */
+.exemplo2 > p {
+    color: green;
+}
+
+/* aplica no primeiro elemento irmão direto */
+.exemplo3 + p {
+    color: purple;
+}
+
+/* aplica em todos os irmãos diretos */
+.exemplo4 ~p {
+    color: blue;
+}

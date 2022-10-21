@@ -1,0 +1,21 @@
+p {
+    color: green;
+    text-align: justify;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps; /* caixa alta pequena */
+    text-transform: capitalize; /* cada uma das letras em maiúscula */
+    text-indent: 50px; /* espaço no começo do parágrafo */
+    word-spacing: 20px; /* adiciona espaço entre palavras */
+    line-height: 50px; /* adiciona espaço entre as linhas */
+}
+
+a {
+    text-decoration: none;
+    letter-spacing: 20px; /* adiciona espaço entre letras */
+}
+
+h1 {
+    text-shadow: 2px 2px 5px rgb(255, 0, 0);
+}

@@ -1,0 +1,26 @@
+body {
+    background: url(https://img.freepik.com/fotos-gratis/figura-triangular-geometrica-legal-em-uma-luz-de-laser-neon-otima-para-fundos-e-papeis-de-parede_181624-9331.jpg?w=2000);
+}
+
+ul {
+    background: grey;
+    padding: 20px;
+    opacity: 0.5;
+}
+
+ul li {
+    background: blue;
+    display: inline;
+    margin: 10px;
+    
+}
+
+div {
+    color: white;
+}
+
+/* 
+    display: none;  esconde e desocupa um elemento
+    visibility: hidden; esconde e mantém a área ocupada
+    opacity: 1; vai de 0 a 1
+*/
